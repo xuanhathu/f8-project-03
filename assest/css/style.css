@@ -110,7 +110,12 @@ a {
     display: flex;
 }
 
-.action__login,
+.header-action {
+    display: flex;
+    align-items: center;
+}
+
+.header-action__login,
 .navbar__link {
     padding: 4px 21px;
     font-weight: 300;
@@ -136,8 +141,81 @@ a {
     top: -2px;
     left: -8px;
 }
+.header-action__login {
+    margin-right: 7px;
+}
 
-.action__signup {
+.header-action__signup {
     min-width: 104px;
     line-height: 44px;
+}
+/* Hero */
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    width: 44%;
+    flex-shrink: 0;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.hero__desc {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__call {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 38px;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__images {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child {
+    position: relative;
+    margin-left: -6px;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    border-radius: 0px 6px 6px 0px;
 }
